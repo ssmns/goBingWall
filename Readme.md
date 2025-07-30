@@ -7,8 +7,8 @@
 Clone the project and install dependencies:
 
 ```sh
- git clone ....
- cd BingwallpalerGo
+ git clone git@github.com:ssmns/goBingWall.git
+ cd goBingWall
  go mod tidy 
 ```
 
