@@ -1,0 +1,29 @@
+BingWall/
+build/
+
+# Compiled binaries
+*.exe
+*.bin
+
+# Go build cache
+.go/
+
+# Go module cache
+pkg/
+
+# Vendor directory (if not explicitly managed and committed)
+vendor/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*~
+*.swp
+
+# Log files and temporary data
+*.log
+tmp/
+
+# Sensitive information (example)
+.env
+config.local.json
