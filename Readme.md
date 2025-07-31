@@ -22,10 +22,26 @@ For building:
 
 ```sh
 mkdir build
-go mod build -o build/Bingwallpaper.exe
+go mod build -ldflags="-s -w"  -o build/<executable file name>
 ```
 
-Copy `BingWallpaper.exe` to a directory in your system's PATH.
+And for more compression after build use [upx](https://upx.github.io/):
+
+```sh
+upx --best <executable file>
+
+```
+
+Build size benchmark
+
+| os | build flags | use upx | size |
+|---|---|---|---|
+| Linux | ❌| ❌| 10.1 mb|
+| Linux | ❌| ✔️| 5.8 mb|
+|  Linux  | -ldflags="-s -w" | ❌| 6.6 mb|
+|  Linux  | -ldflags="-s -w" | ✔️ | 2.4 mb|
+
+Copy `executable file` to a directory in your system's PATH.
 
 
 ## Usage
